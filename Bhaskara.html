@@ -26,11 +26,10 @@
             let B= parseFloat(document.getElementById("b").value);
             let C = parseFloat(document.getElementById("c").value);
         
-
             let delta = ( B * B ) - 4 * A * C;
 
             if (delta < 0){
-                document.getElementById("resposta").innerHTML = "Delta: " + delta + "<br>" + "Não possui raízes reais.";
+                document.getElementById("resposta").innerHTML = "Não possui raízes reais.";
             } else {
                 let x1 = (-B + Math.sqrt(delta)) / (2*A);
                 let x2 = (-B - Math.sqrt(delta)) / (2*A);
