@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar</title>
+    <link rel="stylesheet" href="placar.css">
+</head>
+<body>
+
+<header>
+    <h1>Placar de Jogo</h1>
+</header>
+
+<main>
+
+    <!-- TIME A -->
+    <section class="card">
+        <h2 id="nomeA">Time A</h2>
+        <h1 id="pontosA">0</h1>
+
+        <button onclick="marcarPonto('A')">+1 Ponto</button>
+    </section>
+
+    <!-- TIME B -->
+    <section class="card">
+        <h2 id="nomeB">Time B</h2>
+        <h1 id="pontosB">0</h1>
+
+        <button onclick="marcarPonto('B')">+1 Ponto</button>
+    </section>
+
+</main>
+
+<div class="controle">
+    <button onclick="resetar()">Resetar</button>
+</div>
+
+<footer>
+    <p>Controle de Placar</p>
+</footer>
+
+<script src="placar.js"></script>
+
+</body>
+</html>
