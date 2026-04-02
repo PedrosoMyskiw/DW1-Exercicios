@@ -21,6 +21,16 @@ function calcular() {
         return;
     }
 
+    if (n1 < 0 || n1 > 10 || n2 < 0 || n2 > 10 || n3 < 0 || n3 > 10 || n4 < 0 || n4 > 10 || me < 0 || me > 10) {
+
+    document.getElementById("resultado").innerHTML = "As notas devem estar entre 0 e 10!";
+
+    footer.classList.add("footer-erro");
+    msgFooter.innerHTML = "Erro: notas inválidas (0 a 10)!";
+
+    return;
+}
+
     let MA = (n1 + n2*2 + n3*3 + n4*4 + me) / 11;
 
     let conceito = "";
